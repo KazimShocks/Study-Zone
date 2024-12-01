@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KazimSS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #ff0000, #005eff);
+            color: #fff;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('https://i.redd.it/jyuj99zd7iu51.png') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+        .hero button {
+            padding: 0.7rem 1.5rem;
+            font-size: 1rem;
+            background: #2575fc;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .hero button:hover {
+            background: #6a11cb;
+        }
+
+        /* Cards Section */
+        .cards {
+            max-width: 1200px;
+            margin: 2rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            padding: 0 1rem;
+        }
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card .content {
+            padding: 1rem;
+        }
+        .card h3 {
+            margin: 0 0 1rem;
+        }
+        .card p {
+            color: #555;
+        }
+        .card a {
+            color: #2575fc;
+            text-decoration: none;
+        }
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Featured Channel Icons */
+        .featured-channels {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .featured-channels a {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+        .featured-channels a:hover {
+            transform: translateY(-5px);
+        }
+        .featured-channels a img {
+            margin-right: 10px;
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        footer a {
+            color: #2575fc;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>KazimSS</h1>
+            <nav>
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div>
+            <h1>Welcome to ShellShockers</h1>
+            <p>The ultimate battleground for egg warriors.</p>
+            <button>Get Started</button>
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="cards" id="about">
+        <!-- Tips and Tricks -->
+        <div class="card">
+            <iframe 
+                width="100%" 
+                height="200" 
+                src="https://www.youtube.com/embed/gwrvhnxdylM" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            <div class="content">
+                <h3>Tips and Tricks</h3>
+                <p>Watch the latest tips and tricks and Get Prepared to Destory ShellShockers Lobbies.</p>
+            </div>
+        </div>
+
+        <!-- Featured Channels -->
+        <div class="card">
+            <div class="content">
+                <h3>Featured Channels</h3>
+                <div class="featured-channels">
+                    <a href="https://www.youtube.com/@yolkleague" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="Yolk League Icon">
+                        Yolk League
+                    </a>
+                    <a href="https://www.youtube.com/@myrosamaz" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="Myrosamaz Icon">
+                        Myrosamaz
+                    </a>
+                    <a href="https://www.youtube.com/@thekingman_yt2023" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="TheKingman_yt2023 Icon">
+                        TheKingman_yt2023
+                    </a>
+                    <a href="https://www.youtube.com/@Axyn77" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="Axyn77 Icon">
+                        Axyn77
+                    </a>
+                    <a href="https://www.youtube.com/@HeimaeyShocks" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="HeimaeyShocks Icon">
+                        HeimaeyShocks
+                    </a>
+                    <a href="https://www.youtube.com/@MeepFryer" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="MeepFryer Icon">
+                        MeepFryer
+                    </a>
+                    <a href="https://www.youtube.com/@gibbyshocks" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="GibbyShocks Icon">
+                        GibbyShocks
+                    </a>
+                    <a href="https://www.youtube.com/@Boolet" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="Boolet Icon">
+                        Boolet
+                    </a>
+                    <a href="https://www.youtube.com/@YaboiJenkins" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="YaboiJenkins Icon">
+                        YaboiJenkins
+                    </a>
+                    <a href="https://www.youtube.com/@TheAvenger3382" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="TheAvenger3382 Icon">
+                        TheAvenger3382
+                    </a>
+                    <a href="https://www.youtube.com/@K4hhny" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="K4hhny Icon">
+                        K4hhny
+                    </a>
+                    <a href="https://www.youtube.com/@TheRogueContractor" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="TheRogueContractor Icon">
+                        TheRogueContractor
+                    </a>
+                    <a href="https://www.youtube.com/@inmoonwetrust" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="InMoonWeTrust Icon">
+                        InMoonWeTrust
+                    </a>
+                    <a href="https://www.youtube.com/@ZEUS_Shocks1875" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="ZEUS_Shocks1875 Icon">
+                        ZEUS_Shocks1875
+                    </a>
+                    <a href="https://www.youtube.com/@CaptainElixr" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="CaptainElixr Icon">
+                        CaptainElixr
+                    </a>
+                    <a href="https://www.youtube.com/@godric_gryffindor17" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="GodricGryffindor17 Icon">
+                        GodricGryffindor17
+                    </a>
+                    <a href="https://www.youtube.com/@BlueWizardDigital" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="BlueWizardDigital Icon">
+                        BlueWizardDigital
+                    </a>
+                    <a href="https://www.youtube.com/@ItzNinjawho" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="ItzNinjawho Icon">
+                        ItzNinjawho
+                    </a>
+                    <a href="https://www.youtube.com/@kingbobshockz" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="KingBobShockz Icon">
+                        KingBobShockz
+                    </a>
+                    <a href="https://www.youtube.com/@Kilzomatic" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="Kilzomatic Icon">
+                        Kilzomatic
+                    </a>
+                    <a href="https://www.youtube.com/@tomtompickle" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="TomTomPickle Icon">
+                        TomTomPickle
+                    </a>
+                    <a href="https://www.youtube.com/@itsZUKINI" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="ItsZUKINI Icon">
+                        ItsZUKINI
+                    </a>
+                    <a href="https://www.youtube.com/@sharp21" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="Sharp21 Icon">
+                        Sharp21
+                    </a>
+                    <a href="https://www.youtube.com/@LetsBust" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="LetsBust Icon">
+                        LetsBust
+                    </a>
+                    <a href="https://www.youtube.com/@PIXLDLATED" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="PIXLDLATED Icon">
+                        PIXLDLATED
+                    </a>
+                    <a href="https://www.youtube.com/@bubbleaxe4325" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="BubbleAxe4325 Icon">
+                        BubbleAxe4325
+                    </a>
+                    <a href="https://www.youtube.com/@DeathlyLove" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="DeathlyLove Icon">
+                        DeathlyLove
+                    </a>
+                    <a href="https://www.youtube.com/@SubtoVirojet" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="SubtoVirojet Icon">
+                        SubtoVirojet
+                    </a>
+                    <a href="https://www.youtube.com/@inspectxr" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="Inspectxr Icon">
+                        Inspectxr
+                    </a>
+                    <a href="https://youtube.com/@krazymanshockz" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="KrazyManShockz Icon">
+                        KrazyManShockz
+                    </a>
+                    <a href="https://www.youtube.com/@muerthhe" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="Muerthhe Icon">
+                        Muerthhe
+                    </a>
+                    <a href="https://www.youtube.com/@BaXuShell" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="BaXuShell Icon">
+                        BaXuShell
+                    </a>
+                    <a href="https://www.youtube.com/@ItzTheDOCTR" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="ItzTheDOCTR Icon">
+                        ItzTheDOCTR
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 KazimSS | <a href="mailto:kazim@domain.com">Contact</a></p>
+    </footer>
+</body>
+</html>
